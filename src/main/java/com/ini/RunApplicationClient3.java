@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class RunApplicationClient {
+public class RunApplicationClient3 {
 
 	@Bean
 	@LoadBalanced
@@ -18,6 +18,6 @@ public class RunApplicationClient {
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(RunApplicationClient.class, args);
+		SpringApplication.run(RunApplicationClient3.class, args);
 	}
 }

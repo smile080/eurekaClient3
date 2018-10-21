@@ -14,11 +14,11 @@ public class HelloController {
 	@Autowired
 	private DiscoveryClient client;
  
-    @RequestMapping(value = "/hello1" ,method=RequestMethod.GET)
+    @RequestMapping(value = "/helloServer3" ,method=RequestMethod.GET)
     public String  saveArticle() {
     	ServiceInstance instance = client.getLocalServiceInstance();
     	logger.info("/hello,host:" + instance.getHost() + ",service_id:" + instance.getServiceId());
-    	return "Hello service 1";
+    	return "Hello service 3";
     }
     
     

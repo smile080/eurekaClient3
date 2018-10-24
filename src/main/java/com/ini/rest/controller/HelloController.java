@@ -21,6 +21,9 @@ public class HelloController {
     	return "Hello service 3";
     }
     
-    
+    @GetMapping("/helloServer4/{cusName}")
+    public String  sayHello(@PathVariable("cusName") String cusName) {
+    	return "Hello," + cusName;
+    }
     
 }
